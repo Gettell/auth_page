@@ -25,11 +25,13 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        body: Container(width: double.infinity,
+        body: Container(
+          decoration: BoxDecoration (image: DecorationImage(image: AssetImage('assets/fon.jpg'), fit: BoxFit.cover)),
+          width: double.infinity,
           child: Column(
             children: [
               SizedBox(height: 60,),
-              SizedBox(width: 110, height: 84, child: Placeholder(),),
+              SizedBox(width: 110, height: 84, child: Image(image: AssetImage('assets/diamond.png'),),),
               SizedBox(height: 20,),
               Text('Введите логин в виде 10 цифр номера телефона',
                 style: TextStyle(fontSize: 16, color: Color.fromRGBO(0, 0, 0, 0.6)),),
